@@ -1,0 +1,83 @@
+<form name="addNewUserFormByAdmin" action="{action}" method="POST" enctype="multipart/form-data">
+
+<table class="showTable">
+<tr>
+  <th colspan="2">Изменение профиля</th>
+</tr>
+<tr>
+  <td width="40%"><strong>Имя:</strong></td>
+  <td width="60%"><input type="text" name="name" maxlength="30" value="{name}" style="width:300px" readonly /></td>
+</tr>
+<tr>
+  <td width="40%"><strong>Статус:</strong></td>
+  <td width="60%">{status}</td>
+</tr>
+<tr>
+  <td width="40%"><strong>Адрес e-mail:</strong></td>
+  <td width="60%">
+  <input type="text" name="email" maxlength="60" value="{email}" style="width:300px" />
+  <input type="hidden" name="oldEmail" value="{oldEmail}" />
+  </td>
+</tr>
+<tr>
+  <td>
+  <strong>Новый пароль:</strong><br/>
+  Указывайте пароль <em>только</em> если вы хотите его поменять.
+  </td>
+  <td><input type="password" name="newpassword" maxlength="30" value="" style="width:300px" /></td>
+</tr>
+<tr>
+  <td>
+  <strong>Подтвердите пароль:</strong><br/>
+  Подтверждать пароль нужно в том случае, если вы изменили его выше.
+  </td>
+  <td><input type="password" name="confirm" maxlength="30" value="" style="width:300px" /></td>
+</tr>
+<tr>
+  <td><strong>Номер в ICQ:</strong></td>
+  <td><input type="text" name="icq" maxlength="12" value="{icq}" style="width:300px" /></td>
+</tr>
+<tr>
+  <td><strong>Домашняя страничка:</strong></td>
+  <td><input type="text" name="url" maxlength="60" value="{url}" style="width:300px" /></td>
+</tr>
+<tr>
+  <td><strong>Интересы:</strong></td>
+  <td><textarea name="about" cols="50" rows="3">{about}</textarea></td>
+</tr>
+<tr>
+  <td>
+  <strong>Подпись:</strong><br/>
+  Это текст, который будет добавлен к размещаемым пользователем сообщениям.
+  </td>
+  <td><textarea name="signature" cols="50" rows="3">{signature}</textarea></td>
+</tr>
+<tr>
+  <td>
+  <strong>Коррекция временных зон:</strong><br/>
+  Введите необходимую разницу в часах относительно времени на форуме, и все время будет отображаться с учетом
+  разницы во временной зоне.
+  </td>
+  <td>
+  <select name="timezone">
+  {options}
+  </select>
+  Текущее время на сервере: {servertime}
+  </td>
+</tr>
+<tr>
+  <td>
+  <strong>Аватар:</strong><br/>
+  Показывает небольшое изображение под информацией о пользователе в сообщениях.
+  </td>
+  <td>
+  <input type="file" name="avatar" style="width:200px" />
+  {unlinkfile}
+  </td>
+</tr>
+<tr>
+  <td colspan="2" align="center"><input type="submit" name="submitForm" value="Отправить" /></td>
+</tr>
+</table>
+
+<form>

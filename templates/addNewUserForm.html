@@ -1,0 +1,77 @@
+<form name="addNewUserForm" action="{action}" method="POST" enctype="multipart/form-data">
+
+<table class="showTable">
+<tr>
+  <th colspan="2">Регистрация</th>
+</tr>
+<tr>
+  <td width="40%"><strong>Имя:</strong></td>
+  <td width="60%"><input type="text" name="name" maxlength="30" value="{name}" /></td>
+</tr>
+<tr>
+  <td><strong>Адрес e-mail:</strong></td>
+  <td><input type="text" name="email" maxlength="60" value="{email}" /></td>
+</tr>
+<tr>
+  <td><strong>Пароль:</strong></td>
+  <td><input type="password" name="password" maxlength="30" value="" /></td>
+</tr>
+<tr>
+  <td><strong>Подтвердите пароль:</strong></td>
+  <td><input type="password" name="confirm" maxlength="30" value="" /></td>
+</tr>
+<tr>
+  <td><strong>Номер в ICQ:</strong></td>
+  <td><input type="text" name="icq" maxlength="12" value="{icq}" /></td>
+</tr>
+<tr>
+  <td><strong>Домашняя страничка:</strong></td>
+  <td><input type="text" name="url" maxlength="60" value="{url}" /></td>
+</tr>
+<tr>
+  <td><strong>Интересы:</strong></td>
+  <td><textarea name="about" cols="50" rows="3">{about}</textarea></td>
+</tr>
+<tr>
+  <td>
+  <strong>Подпись:</strong><br/>
+  Это текст, который будет добавлен к размещаемым вами сообщениям.
+  </td>
+  <td><textarea name="signature" cols="50" rows="3">{signature}</textarea></td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td><img src="{kcaptcha}" alt="" /></td>
+</tr>
+<tr>
+  <td><strong>Код подтверждения:</strong></td>
+  <td><input type="text" name="keystring" maxlength="6" value="{keystring}" /></td>
+</tr>
+<tr>
+  <td>
+  <strong>Коррекция временных зон:</strong><br/>
+  Введите необходимую разницу в часах относительно времени на форуме, и все время будет отображаться с учетом
+  разницы в вашей временной зоне.
+  </td>
+  <td>
+  <select name="timezone">
+  {options}
+  </select>
+  Текущее время на сервере: {servertime}
+  </td>
+</tr>
+<tr>
+  <td>
+  <strong>Аватар:</strong><br/>
+  Показывает небольшое изображение под информацией о вас в сообщениях.
+  </td>
+  <td>
+  <input type="file" name="avatar" />
+  </td>
+</tr>
+<tr>
+  <td colspan="2" align="center"><input type="submit" name="submitForm" value="Отправить" /></td>
+</tr>
+</table>
+
+<form>

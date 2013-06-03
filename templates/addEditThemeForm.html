@@ -1,0 +1,33 @@
+<form name='addThemeForm' action="{action}" method="POST" enctype="multipart/form-data">
+
+<table class="showTable">
+<tr>
+  <th colspan="2">Новая тема</td>
+</tr>
+<tr>
+  <td>Тема:</td>
+  <td><input type="text" name="theme" size=74 maxlength=150 value="{theme}"></td>
+</tr>
+<tr>
+  <td>Имя:</td>
+  <td><input type="text" name="name" size=74 maxlength=150 value="{name}"></td>
+</tr>
+<tr>
+  <td>Сообщение:</td>
+  <td><textarea cols=76 rows=10 name="message">{message}</textarea></td>
+</tr>
+<tr>
+  <td>URL:</td>
+  <td><input type="text" name="url" size=74 maxlength=100 value="{url}"></td>
+</tr>
+<tr>
+  <td>Прикрепить:</td>
+  <td><input type="file" name="attach" size=61 /></td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td><input type="submit" name="sendForm" value="Отправить" /></td>
+</tr>
+</table>
+
+</form>

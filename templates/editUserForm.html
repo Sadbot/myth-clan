@@ -1,0 +1,67 @@
+<form name="editUserForm" action="{action}" method="POST" enctype="multipart/form-data">
+
+<table class="showTable">
+<tr>
+  <th colspan="2">Изменение профиля</th>
+</tr>
+<tr>
+  <td width="40%"><strong>Имя:</strong></td>
+  <td width="60%"><input type="text" name="first_name" maxlength="25" value="{first_name}" style="width:300px" /></td>
+</tr>
+<tr>
+  <td><strong>Фамилия:</strong></td>
+  <td><input type="text" name="last_name" maxlength="25" value="{last_name}" style="width:300px" /></td>
+</tr>
+<tr>
+  <td ><strong>Адрес e-mail:</strong></td>
+  <td ><input type="text" name="email" maxlength="60" value="{email}" style="width:300px" /></td>
+</tr>
+<tr>
+  <td>
+  <strong>Текущий пароль:</strong><br/>
+  Вы должны указать ваш текущий пароль, только если хотите изменить его или поменять свой адрес e-mail.
+  </td>
+  <td><input type="password" name="old_password" maxlength="30" value="" style="width:300px" /></td>
+</tr>
+<tr>
+  <td>
+  <strong>Новый пароль:</strong><br/>
+  Указывайте пароль только если вы хотите его поменять.
+  </td>
+  <td><input type="password" name="new_password1" maxlength="30" value="" style="width:300px" /></td>
+</tr>
+<tr>
+  <td>
+  <strong>Подтвердите пароль:</strong><br/>
+  Подтверждать пароль нужно в том случае, если вы изменили его выше.
+  </td>
+  <td><input type="password" name="new_password2" maxlength="30" value="" style="width:300px" /></td>
+</tr>
+<tr>
+  <td><strong>Номер в ICQ:</strong></td>
+  <td><input type="text" name="icq" maxlength="12" value="{icq}" style="width:300px" /></td>
+</tr>
+<tr>
+  <td><strong>Домашняя страничка:</strong></td>
+  <td><input type="text" name="url" maxlength="60" value="{url}" style="width:300px" /></td>
+</tr>
+<tr>
+  <td><strong>Интересы:</strong></td>
+  <td><textarea name="about" cols="50" rows="3">{about}</textarea></td>
+</tr>
+<tr>
+  <td>
+  <strong>Аватар:</strong><br/>
+  Показывает небольшое изображение под информацией о вас в сообщениях.
+  </td>
+  <td>
+  <input type="file" name="fupload" style="width:200px" />
+  {unlinkfile}
+  </td>
+</tr>
+<tr>
+  <td colspan="2" align="center"><input type="submit" name="submit" value="Отправить" /></td>
+</tr>
+</table>
+
+<form>

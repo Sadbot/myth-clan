@@ -1,0 +1,23 @@
+<form name="sendMailForm" action="{action}" method="POST">
+<table class="showTable">
+<tr>
+  <th colspan="2">Написать письмо</th>
+</tr>
+<tr>
+  <td>Для пользователя:</td>
+  <td><input type="text" name="toUser" maxlength="30" value="{toUser}" style="width:300px" /></td>
+</tr>
+<tr>
+  <td>Заголовок письма:</td>
+  <td><input type="text" name="subject" maxlength="60" value="{subject}" style="width:300px" /></td>
+</tr>
+<tr>
+  <td>Текст письма:</td>
+  <td><textarea name="message" cols="60" rows="15">{message}</textarea>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td><input type="submit" name="sendForm" value="Отправить" /></td>
+</tr>
+</table>
+</form>

@@ -1,0 +1,33 @@
+<form action="{action}" method="POST" name="searchForm">
+
+<table class="showTable">
+<tr>
+  <th colspan="2">Поиск по сообществам</th>
+</tr>
+<tr>
+   <td width="30%" align="right">Что искать:</td>
+   <td width="70%"><input type="text" name="words" maxlength="64" value="" style="width:300px" /></td>
+</tr>
+<tr>
+   <td align="right">Сообщество:</td>
+   <td>
+   <select name="id_forum" style="width:300px">
+   {options}
+   </select>
+   </td>
+</tr>
+<tr>
+   <td align="right">Где искать:</td>
+   <td>
+   <input type="radio" name="where" value="themes" checked /> Искать только в названиях тем<br/>
+   <input type="radio" name="where" value="posts" /> Искать только в текстах сообщений<br/>
+   <input type="radio" name="where" value="everywhere" /> Искать в названиях тем и текстах сообщений
+   </td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+  <td><input type="submit" name="sendForm" value="Искать" /></td>
+</tr>
+</table>
+
+</form>

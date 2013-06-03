@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+{meta}
+
+<title>{title}</title>
+
+<link rel="shortcut icon" href="css/favicon.ico" />
+<!--[if lt IE 8]>
+	<script>
+		var e = ("article,aside,figcaption,figure,footer, header, hgroup,nav,section,time").split(',');
+		for (var i = 0; i < e.legth; i++) {
+			document.createElement(e[i]);
+		}
+	</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet" type="text/css" href="css/special.css">
+<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="../css/special_ie.css">
+<![endif]-->
+<script src="script/jquery.js"></script>
+<script src="script/registration.js"></script>
+<script>
+	$(document).ready(function () {
+		var check = $('.checked');
+	   
+	    $('.checkall').click( function () {
+			
+			if($(this).attr('checked', true))
+			{
+				$(this).prop('checked', this.checked);
+				check.prop('checked', this.checked);
+			}
+			else if ($(this).attr('checked', false))
+			{
+				$(this).prop('checked', this.unchecked);
+				check.prop('checked', this.unchecked);
+			}
+	    });
+	});
+</script>
+
+</head>
+
+<body>
+<div class="container">
+	<header id="h"><a href="index.php"></a></header>
+		<section id="mainunit">
+			{leftmenu}
+			{rightmenu}
+			<section id='centerunit'>
+				{mainmenu}
+				{content}
+			</section>
+	    </section>
+   		<div id='push'></div>
+</div>
+
+<footer></footer>
+
+</body>
+</html>
